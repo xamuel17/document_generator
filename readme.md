@@ -1,11 +1,11 @@
-###################
-Document Generator
-###################
+
+## Document Generator
+
 This Application is use to generate PDF and Excel documents
 
-*******************
-Installation Guide
-*******************
+
+## Installation Guide.
+
 
 Step 1: Import taskone_db to your database tool
 Step 2 : Mount the project on your PHP Server (XAMP,WAMP or LIVE Server)
