@@ -117,7 +117,29 @@ class PayslipConfig
 
 
 
-
+	public function textHeader(){
+		return 	$styleArray = [
+			'font' => [
+				'bold' => true,
+				'size' => 11,
+		
+			
+			],
+			'alignment' => [
+				'horizontal' => \PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_JUSTIFY,
+			],
+			'borders' => [
+				'outline' => [
+					'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN,
+				],
+			],
+			'fill' => [
+				'fillType' => \PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID,
+				'color' => ['argb' => \PhpOffice\PhpSpreadsheet\Style\Color::COLOR_GREEN],
+			
+			],
+		];
+	}
 
 
 

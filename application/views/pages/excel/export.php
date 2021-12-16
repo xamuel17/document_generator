@@ -16,7 +16,7 @@
 				}
 				 ?>
 				<div class="card-body">
-					<h5 class="card-title">Easy Export</h5>
+					<h5 class="card-title">User Easy Export</h5>
 					<h6 class="card-subtitle mb-2 text-muted"> powered by PHPSpreadsheet</h6>
 					<p class="card-text">Export Xls, Csv and Xlsx Microsoft Excel Spreadsheet .</p>
 
@@ -24,7 +24,7 @@
 
 				<div class="row">
 					<div class="col-lg-6">
-						<a  href="<?php echo base_url()?>excel/download"  target="_blank" class="btn btn-success"> Export Users Spreadsheet</a>
+						<a  href="<?php echo base_url()?>excel/download"  target="_blank" class="btn btn-success"> <i class="fa fa-cloud-download" aria-hidden="true"></i>&nbsp;Export Users Spreadsheet</a>
 					</div>
 				</div>
 
