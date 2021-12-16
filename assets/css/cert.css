@@ -1,0 +1,76 @@
+.cert {
+	border: 6px solid rgb(211, 88, 88);
+	border-right: 6px solid rgb(221, 76, 76);
+	border-left: 6px solid rgb(236, 75, 75);
+	width: 700px;
+	font-family: arial;
+	color: #383737;
+  }
+  
+  .crt_title {
+	margin-top: 30px;
+	font-family: "Satisfy", cursive;
+	font-size: 40px;
+	letter-spacing: 1px;
+	color: #ed3327;
+  }
+  .crt_logo img {
+	width: 130px;
+	height: auto;
+	margin: auto;
+	padding: 30px;
+  }
+  .colorGreen {
+	color: #4f4e58;
+  }
+  .crt_user {
+	display: inline-block;
+	width: 80%;
+	padding: 5px 25px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-family: "Satisfy", cursive;
+	font-size: 40px;
+	border-bottom: 1px dashed #cecece;
+  }
+  
+  .afterName {
+	font-weight: 100;
+	color: #383737;
+  }
+  .colorGrey {
+	color: grey;
+  }
+  .certSign {
+	width: 200px;
+  }
+  
+  @media (max-width: 700px) {
+	.cert {
+	  width: 100%;
+	}
+  }
+
+
+
+  .bg {
+	/* The image used */
+
+		background-image: url("../../assets/img/cert.v2.jpg"); 
+  
+	/* Full height */
+	height: 100%;
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  
+
+  h5{
+	  color: #ed3327;
+	  font-weight: lighter;
+	  font-family:'Times New Roman', Times, serif;
+  }
+
