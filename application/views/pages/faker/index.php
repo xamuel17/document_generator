@@ -34,7 +34,7 @@ if ($this->session->flashdata('errors')){
 	<a href="<?php echo base_url();?>faker/users" class="btn btn-outline-primary"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Generate Users</a>
 </div>
 <div class="col-lg-4">
-	<a href="<?php echo base_url();?>faker/employees" class="btn btn-outline-warning"><i class="fa fa-male" aria-hidden="true"></i>&nbsp;Generate Employees</a>
+	<a href="<?php echo base_url();?>faker/employees" class="btn btn-outline-danger"><i class="fa fa-male" aria-hidden="true"></i>&nbsp;Generate Employees</a>
 </div>
 
 </div>
