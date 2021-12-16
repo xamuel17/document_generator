@@ -32,13 +32,22 @@ class Excel extends CI_Controller
 		
 		$spreadsheet = new Spreadsheet();
 		$sheet = $spreadsheet->getActiveSheet();
-		$sheet->setCellValue('A1', 'Id')->getStyle('A1')->applyFromArray($config->textName());
-		$sheet->setCellValue('B1', 'Name')->getStyle('B1')->applyFromArray($config->textName());
-        $sheet->setCellValue('C1', 'Email')->getStyle('C1')->applyFromArray($config->textName());
-        $sheet->setCellValue('D1', 'Phone')->getStyle('D1')->applyFromArray($config->textName());
-        $sheet->setCellValue('E1', 'Country')->getStyle('E1')->applyFromArray($config->textName());
-		$sheet->setCellValue('F1', 'Country_code')->getStyle('F1')->applyFromArray($config->textName());     
-        $rows = 2;
+		$sheet->setCellValue('A1', 'Id')->getStyle('A1')->applyFromArray($config->textHeader());
+		$sheet->setCellValue('B1', 'Name')->getStyle('B1')->applyFromArray($config->textHeader());
+        $sheet->setCellValue('C1', 'Email')->getStyle('C1')->applyFromArray($config->textHeader());
+        $sheet->setCellValue('D1', 'Phone')->getStyle('D1')->applyFromArray($config->textHeader());
+        $sheet->setCellValue('E1', 'Country')->getStyle('E1')->applyFromArray($config->textHeader());
+		$sheet->setCellValue('F1', 'Country_code')->getStyle('F1')->applyFromArray($config->textHeader());     
+       
+		$sheet->getColumnDimension('A')->setAutoSize(true);
+		$sheet->getColumnDimension('B')->setAutoSize(true);
+		$sheet->getColumnDimension('C')->setAutoSize(true);
+		$sheet->getColumnDimension('D')->setAutoSize(true);
+		$sheet->getColumnDimension('E')->setAutoSize(true);
+		$sheet->getColumnDimension('F')->setAutoSize(true);
+		
+
+		$rows = 2;
 
 		foreach ($userData as $val){
 			$sheet->setCellValue('A' . $rows, $val['id']);
